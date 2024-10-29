@@ -18,6 +18,5 @@
 
 ## Скриншоты
 ![Список фильмов](https://github.com/user-attachments/assets/6![P1xSy9ocw04](https://github.com/user-attachments/assets/896bde27-1bb9-4e53-a7ed-16f37133283e)
-59d5426-8427-459a-b99c-5ee43f774602)
 ![Детали фильма]![P1xSy9ocw04](https://github.com/user-attachments/assets/e125dc74-7ae8-4f16-9003-b6994c3b8727)
 
