@@ -35,6 +35,7 @@ export async function render(data, handleNavigation) {
   link.href = 'index.html';
   img.src = posters[data.episode_id - 1];
   img.alt = data.title;
+  img.style = 'width: 30%';
   title.textContent = data.title;
   description.textContent = data.opening_crawl;
   titlePlanets.textContent = 'Planets';
