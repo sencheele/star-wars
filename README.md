@@ -17,6 +17,8 @@
 - Использование Bootstrap для стилизации компонентов.
 
 ## Скриншоты
-![Список фильмов](https://github.com/user-attachments/assets/6![P1xSy9ocw04](https://github.com/user-attachments/assets/896bde27-1bb9-4e53-a7ed-16f37133283e)
-![Детали фильма]![P1xSy9ocw04](https://github.com/user-attachments/assets/e125dc74-7ae8-4f16-9003-b6994c3b8727)
+![zYRvtD_CCfE](https://github.com/user-attachments/assets/e5a653d6-a38f-47be-b3f9-debee3e6dafc)
+![P1xSy9ocw04](https://github.com/user-attachments/assets/46d28142-ec7b-4650-9d3f-45bbb7697b84)
+
+
 
