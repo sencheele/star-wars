@@ -3,7 +3,6 @@ async function loadFilmData(arrSrc) {
 }
 
 export async function render(data, handleNavigation) {
-  console.log('Функция для детальной информации!');
   const posters = [
     'https://leonardo.osnova.io/f55707ee-117b-d67f-b598-74989547b878/-/preview/592x/-/format/webp',
     'https://leonardo.osnova.io/5083616d-733a-bd9b-930c-804a86da456a/-/preview/592x/-/format/webp',
@@ -15,6 +14,9 @@ export async function render(data, handleNavigation) {
 
   const container = document.createElement('div');
   container.classList.add('container', 'd-flex');
+  container.style = 'height: 100vh; align-items: center';
+  const wrapper = document.createElement('div');
+  wrapper.style = 'display: flex; gap: 20px;';
 
   const link = document.createElement('a');
   const img = document.createElement('img');
@@ -28,8 +30,6 @@ export async function render(data, handleNavigation) {
 
   const planetsData = await loadFilmData(data.planets);
   const speciesData = await loadFilmData(data.species);
-  console.log(planetsData);
-  console.log(speciesData);
 
   link.textContent = 'List of movies'
   link.href = 'index.html';
@@ -49,7 +49,8 @@ export async function render(data, handleNavigation) {
   })
 
   inform.append(title, description, titlePlanets, planets, titleSpecies, species, link);
-  container.append(img, inform);
+  wrapper.append(img, inform);
+  container.append(wrapper);
 
   return container;
 }

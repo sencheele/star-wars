@@ -1,6 +1,4 @@
 export function render(data, handleNavigation) {
-  console.log(data.results);
-
   const posters = [
     'https://leonardo.osnova.io/7c79ccca-c9d0-707f-4098-c94920740679/-/preview/592x/-/format/webp',
     'https://leonardo.osnova.io/35d08419-c50f-f4aa-4914-b37f4dee6ea6/-/preview/592x/-/format/webp',
@@ -12,6 +10,9 @@ export function render(data, handleNavigation) {
 
   const container = document.createElement('div');
   container.classList.add('container', 'd-flex');
+  container.style = 'height: 100vh; align-items: center';
+  const wrapper = document.createElement('div');
+  wrapper.style = 'display: flex; align-items: stretch; gap: 20px;';
 
   data.results.forEach((element, index) => {
     const link = document.createElement('a');
@@ -37,8 +38,9 @@ export function render(data, handleNavigation) {
 
     cardBody.append(title);
     link.append(img, cardBody);
-    container.append(link);
+    wrapper.append(link);
   });
 
+  container.append(wrapper);
   return container;
 }
